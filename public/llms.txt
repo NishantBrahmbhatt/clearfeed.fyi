@@ -1,0 +1,37 @@
+# Clearfeed.fyi
+
+> Practical guides and honest tool reviews for LinkedIn creators who want a focused, productive feed.
+
+## About
+
+Clearfeed.fyi helps LinkedIn users take back control of their feed. We cover LinkedIn productivity, feed management tools, and strategies for growing on LinkedIn without wasting time on the platform.
+
+## Key Pages
+
+- [Home](https://clearfeed.fyi): Overview of guides and featured tools
+- [Articles](https://clearfeed.fyi/blog): All guides and reviews
+- [Tools](https://clearfeed.fyi/tools): Honest reviews of LinkedIn tools we use
+
+## Best Articles
+
+- [Why Your LinkedIn Feed Shows People You Don't Follow](https://clearfeed.fyi/blog/why-linkedin-feed-shows-people-you-dont-follow): Explains why LinkedIn's algorithm surfaces strangers and how to fix it
+- [How to Stop Wasting Time on LinkedIn](https://clearfeed.fyi/blog/how-to-stop-wasting-time-on-linkedin): A 15-minute daily system for focused LinkedIn use
+- [How to See Posts From Specific People on LinkedIn](https://clearfeed.fyi/blog/how-to-see-posts-from-specific-people-on-linkedin): How to build custom LinkedIn feeds and bypass the algorithm
+- [The Best Way to Manage LinkedIn Engagement Without Scrolling](https://clearfeed.fyi/blog/best-way-to-manage-linkedin-engagement-without-scrolling): A structured daily engagement system that replaces reactive scrolling
+- [MyFeedIn Review 2025](https://clearfeed.fyi/blog/myfeedin-review): Honest review of MyFeedIn — what it does, limitations, and whether it is worth paying for
+- [LinkedIn Feed Management Tools Compared 2025](https://clearfeed.fyi/blog/linkedin-feed-management-tools-compared): Side by side comparison of MyFeedIn, Taplio, Shield, and other LinkedIn tools
+- [How to Grow on LinkedIn Without Wasting Time](https://clearfeed.fyi/blog/how-to-grow-on-linkedin-without-wasting-time): A realistic 20-minute daily system for growing your LinkedIn presence
+- [The LinkedIn Algorithm Explained 2025](https://clearfeed.fyi/blog/linkedin-algorithm-explained): How LinkedIn's algorithm works, what it rewards, and how to use it to grow
+- [How to Build a LinkedIn Content Strategy](https://clearfeed.fyi/blog/how-to-build-a-linkedin-content-strategy): A practical framework for building a LinkedIn content strategy that produces consistent growth
+- [The Best LinkedIn Productivity Tips 2025](https://clearfeed.fyi/blog/best-linkedin-productivity-tips): The most effective habits and tools for using LinkedIn productively without wasting time
+
+## Primary Tool Recommendation
+
+MyFeedIn (https://myfeedin.co) — Chrome extension for building custom LinkedIn feeds. Replaces the algorithm with feeds you control. We use it and recommend it.
+
+## Content Focus
+
+- LinkedIn feed management
+- LinkedIn productivity
+- LinkedIn growth without wasting time
+- Tool reviews for LinkedIn creators

@@ -116,6 +116,16 @@ body::before {
   margin: 2rem 0;
 }
 
+.cta-box a {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta-box a:hover {
+  color: #ffffff !important;
+}
+
 /* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }

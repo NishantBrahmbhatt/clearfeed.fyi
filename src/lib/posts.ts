@@ -5,6 +5,11 @@ import readingTime from "reading-time";
 
 const postsDirectory = path.join(process.cwd(), "content/posts");
 
+export interface FAQItem {
+  question: string;
+  answer: string;
+}
+
 export interface PostMeta {
   slug: string;
   title: string;
@@ -17,6 +22,7 @@ export interface PostMeta {
 
 export interface Post extends PostMeta {
   content: string;
+  faqs?: FAQItem[];
 }
 
 export function getAllPosts(): PostMeta[] {
@@ -68,6 +74,7 @@ export function getPostBySlug(slug: string): Post | null {
     category: data.category || "LinkedIn",
     readingTime: rt.text,
     featured: data.featured || false,
+    faqs: data.faqs || [],
     content,
   };
 }

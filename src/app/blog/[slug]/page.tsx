@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ArticleSchema from "@/components/ArticleSchema";
 import { getPostBySlug, getAllSlugs } from "@/lib/posts";
 import type { Metadata } from "next";
 
@@ -30,7 +31,6 @@ export async function generateMetadata({
 }
 
 const mdxComponents = {
-  // Custom CTA box — use in MDX as <CtaBox>
   CtaBox: ({
     children,
     href,
@@ -51,7 +51,7 @@ const mdxComponents = {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block bg-signal text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-signal-dark transition-colors"
+        className="inline-block bg-signal text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-signal-dark transition-colors"
         style={{ fontFamily: "var(--font-body)" }}
       >
         {cta} →
@@ -69,11 +69,19 @@ export default async function PostPage({
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const faqs = post.faqs || [];
+
   return (
     <>
+      <ArticleSchema
+        title={post.title}
+        description={post.description}
+        date={post.date}
+        url={`https://clearfeed.fyi/blog/${slug}`}
+        faqs={faqs}
+      />
       <Header />
       <main className="flex-1">
-        {/* Post header */}
         <div className="max-w-3xl mx-auto px-6 pt-14 pb-8">
           <div className="flex items-center gap-3 mb-6 fade-up">
             <span
@@ -111,12 +119,10 @@ export default async function PostPage({
           <div className="mt-8 h-px bg-mist" />
         </div>
 
-        {/* Post content */}
         <article className="max-w-3xl mx-auto px-6 pb-20 prose">
           <MDXRemote source={post.content} components={mdxComponents} />
         </article>
 
-        {/* Bottom CTA */}
         <div className="bg-signal-light border-y border-signal/20">
           <div className="max-w-3xl mx-auto px-6 py-12 text-center">
             <h3
