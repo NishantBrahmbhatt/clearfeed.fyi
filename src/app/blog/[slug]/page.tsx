@@ -3,6 +3,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleSchema from "@/components/ArticleSchema";
+import Citation from "@/components/Citation";
 import { getPostBySlug, getAllSlugs } from "@/lib/posts";
 import type { Metadata } from "next";
 
@@ -31,6 +32,15 @@ export async function generateMetadata({
 }
 
 const mdxComponents = {
+  Citation: ({
+    source,
+    href,
+    year,
+  }: {
+    source: string;
+    href: string;
+    year?: string;
+  }) => <Citation source={source} href={href} year={year} />,
   CtaBox: ({
     children,
     href,

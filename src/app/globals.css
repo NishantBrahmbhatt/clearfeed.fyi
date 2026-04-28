@@ -139,3 +139,40 @@ body::before {
 .fade-up-delay-1 { animation-delay: 0.1s; opacity: 0; }
 .fade-up-delay-2 { animation-delay: 0.2s; opacity: 0; }
 .fade-up-delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+/* Citation pills */
+.citation-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #E8E4DC;
+  color: #1A6B4A;
+  font-size: 0.7rem;
+  font-family: var(--font-body);
+  font-style: normal;
+  padding: 2px 7px 2px 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid #C4BFB6;
+  vertical-align: middle;
+  margin: 0 2px;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1.6;
+}
+
+.citation-pill:hover {
+  background: #1A6B4A;
+  color: white;
+  border-color: #1A6B4A;
+}
+
+.citation-icon {
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.citation-year {
+  opacity: 0.6;
+  margin-left: 2px;
+}
