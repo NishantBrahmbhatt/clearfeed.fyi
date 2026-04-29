@@ -21,6 +21,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Grain texture overlay */
 body::before {
   content: '';
@@ -39,6 +44,7 @@ body::before {
   font-size: 1.125rem;
   line-height: 1.8;
   color: #0D0D0D;
+  overflow-wrap: anywhere;
 }
 
 .prose h1, .prose h2, .prose h3, .prose h4 {
@@ -76,6 +82,23 @@ body::before {
 
 .prose a:hover {
   color: #0F3D2A;
+}
+
+@media (max-width: 640px) {
+  .prose {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .prose h2 {
+    font-size: 1.35rem;
+    margin-top: 2rem;
+  }
+
+  .prose h3 {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+  }
 }
 
 .prose ul, .prose ol {

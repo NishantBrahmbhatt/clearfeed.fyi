@@ -16,7 +16,7 @@ export default function BlogPage() {
   return (
     <>
       <Header />
-      <main className="flex-1 max-w-4xl mx-auto px-6 py-16 w-full">
+      <main className="flex-1 max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 w-full">
         <div className="mb-12 fade-up">
           <span
             className="text-xs font-medium tracking-widest text-signal uppercase mb-4 block"
@@ -25,12 +25,12 @@ export default function BlogPage() {
             All Articles
           </span>
           <h1
-            className="text-4xl font-bold text-ink mb-3"
+            className="text-3xl sm:text-4xl font-bold text-ink mb-3"
             style={{ fontFamily: "var(--font-display)" }}
           >
             Guides & Reviews
           </h1>
-          <p className="text-ink/60 text-lg" style={{ fontFamily: "var(--font-body)" }}>
+          <p className="text-ink/60 text-base sm:text-lg" style={{ fontFamily: "var(--font-body)" }}>
             Everything we know about making LinkedIn work for you.
           </p>
         </div>

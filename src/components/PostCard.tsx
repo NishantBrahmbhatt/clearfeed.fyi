@@ -4,7 +4,7 @@ import { PostMeta } from "@/lib/posts";
 export default function PostCard({ post }: { post: PostMeta }) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block">
-      <article className="border border-mist bg-paper hover:border-signal/40 hover:bg-signal-light/20 transition-all duration-200 rounded-lg p-6">
+      <article className="border border-mist bg-paper hover:border-signal/40 hover:bg-signal-light/20 transition-all duration-200 rounded-lg p-5 sm:p-6">
         <div className="flex items-center gap-3 mb-3">
           <span
             className="text-xs font-medium text-signal bg-signal-light px-2.5 py-1 rounded-full"
@@ -18,7 +18,7 @@ export default function PostCard({ post }: { post: PostMeta }) {
         </div>
 
         <h2
-          className="text-xl font-semibold text-ink mb-2 group-hover:text-signal transition-colors leading-snug"
+          className="text-lg sm:text-xl font-semibold text-ink mb-2 group-hover:text-signal transition-colors leading-snug"
           style={{ fontFamily: "var(--font-display)" }}
         >
           {post.title}

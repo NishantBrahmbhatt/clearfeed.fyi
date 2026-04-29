@@ -19,7 +19,7 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         {/* Hero */}
-        <section className="max-w-4xl mx-auto px-6 pt-20 pb-16">
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pt-14 sm:pt-20 pb-12 sm:pb-16">
           <div className="fade-up">
             <span
               className="inline-block text-xs font-medium tracking-widest text-signal uppercase mb-6"
@@ -28,7 +28,7 @@ export default function HomePage() {
               LinkedIn Clarity
             </span>
             <h1
-              className="text-5xl md:text-6xl font-bold text-ink leading-tight mb-6"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold text-ink leading-tight mb-5 sm:mb-6"
               style={{ fontFamily: "var(--font-display)" }}
             >
               Your LinkedIn feed
@@ -36,17 +36,17 @@ export default function HomePage() {
               <span className="text-signal">should work for you.</span>
             </h1>
             <p
-              className="text-xl text-ink/60 max-w-2xl leading-relaxed mb-10"
+              className="text-lg sm:text-xl text-ink/60 max-w-2xl leading-relaxed mb-8 sm:mb-10"
               style={{ fontFamily: "var(--font-body)" }}
             >
               Practical guides and honest tool reviews for creators who are
               tired of the algorithm deciding what they see. Take back control.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
               <Link
                 href="/blog"
-                className="bg-signal text-white px-6 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors"
+                className="bg-signal text-white px-6 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors text-center"
                 style={{ fontFamily: "var(--font-body)" }}
               >
                 Read the guides →
@@ -55,7 +55,7 @@ export default function HomePage() {
                 href="https://myfeedin.co?atp=PO9qAX"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-signal text-signal px-6 py-3 rounded-full font-medium hover:bg-signal-light transition-colors"
+                className="border border-signal text-signal px-6 py-3 rounded-full font-medium hover:bg-signal-light transition-colors text-center"
                 style={{ fontFamily: "var(--font-body)" }}
               >
                 Try MyFeedIn free
@@ -64,7 +64,7 @@ export default function HomePage() {
           </div>
 
           {/* Divider */}
-          <div className="mt-16 flex items-center gap-4 fade-up fade-up-delay-1">
+          <div className="mt-14 sm:mt-16 flex items-center gap-3 sm:gap-4 fade-up fade-up-delay-1">
             <div className="h-px flex-1 bg-mist" />
             <span className="text-xs text-ink/30 uppercase tracking-widest" style={{ fontFamily: "var(--font-body)" }}>
               Latest articles
@@ -74,7 +74,7 @@ export default function HomePage() {
         </section>
 
         {/* Posts grid */}
-        <section className="max-w-4xl mx-auto px-6 pb-20">
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20">
           {posts.length === 0 ? (
             <div className="text-center py-16">
               <p className="text-ink/40" style={{ fontFamily: "var(--font-body)" }}>
@@ -106,7 +106,7 @@ export default function HomePage() {
 
         {/* Tool spotlight */}
         <section className="bg-signal-light border-y border-signal/20">
-          <div className="max-w-4xl mx-auto px-6 py-14 flex flex-col md:flex-row items-start md:items-center gap-8">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-14 flex flex-col md:flex-row items-start md:items-center gap-6 sm:gap-8">
             <div className="flex-1">
               <span
                 className="text-xs font-medium tracking-widest text-signal uppercase mb-3 block"

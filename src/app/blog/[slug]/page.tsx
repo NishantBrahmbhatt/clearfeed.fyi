@@ -92,8 +92,8 @@ export default async function PostPage({
       />
       <Header />
       <main className="flex-1">
-        <div className="max-w-3xl mx-auto px-6 pt-14 pb-8">
-          <div className="flex items-center gap-3 mb-6 fade-up">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-7 sm:pb-8">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-5 sm:mb-6 fade-up">
             <span
               className="text-xs font-medium text-signal bg-signal-light px-2.5 py-1 rounded-full"
               style={{ fontFamily: "var(--font-body)" }}
@@ -113,14 +113,14 @@ export default async function PostPage({
           </div>
 
           <h1
-            className="text-4xl md:text-5xl font-bold text-ink leading-tight mb-6 fade-up fade-up-delay-1"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold text-ink leading-tight mb-5 sm:mb-6 fade-up fade-up-delay-1"
             style={{ fontFamily: "var(--font-display)" }}
           >
             {post.title}
           </h1>
 
           <p
-            className="text-xl text-ink/60 leading-relaxed fade-up fade-up-delay-2"
+            className="text-lg sm:text-xl text-ink/60 leading-relaxed fade-up fade-up-delay-2"
             style={{ fontFamily: "var(--font-body)" }}
           >
             {post.description}
@@ -129,12 +129,12 @@ export default async function PostPage({
           <div className="mt-8 h-px bg-mist" />
         </div>
 
-        <article className="max-w-3xl mx-auto px-6 pb-20 prose">
+        <article className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20 prose">
           <MDXRemote source={post.content} components={mdxComponents} />
         </article>
 
         <div className="bg-signal-light border-y border-signal/20">
-          <div className="max-w-3xl mx-auto px-6 py-12 text-center">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
             <h3
               className="text-2xl font-bold text-ink mb-3"
               style={{ fontFamily: "var(--font-display)" }}
@@ -152,7 +152,7 @@ export default async function PostPage({
               href="https://myfeedin.co?atp=PO9qAX"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-signal text-white px-8 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors"
+              className="inline-block bg-signal text-white px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors"
               style={{ fontFamily: "var(--font-body)" }}
             >
               Try MyFeedIn free →
