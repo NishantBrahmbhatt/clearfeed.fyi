@@ -6,7 +6,7 @@ import { getAllPosts } from "@/lib/posts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Clearfeed.fyi — Cut the noise. Own your LinkedIn feed.",
+  title: "Clearfeed.fyi",
   description:
     "Practical guides and tool reviews for LinkedIn creators who want a focused, productive feed. Stop scrolling. Start engaging with what matters.",
 };
