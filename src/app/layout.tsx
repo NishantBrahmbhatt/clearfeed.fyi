@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Clearfeed.fyi — Cut the noise. Own your LinkedIn feed.",
+    default: "Clearfeed.fyi",
     template: "%s | Clearfeed.fyi",
   },
   description:
