@@ -51,15 +51,6 @@ export default function HomePage() {
               >
                 Read the guides →
               </Link>
-              <a
-                href="https://myfeedin.co?atp=PO9qAX"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border border-signal text-signal px-6 py-3 rounded-full font-medium hover:bg-signal-light transition-colors text-center"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Try MyFeedIn free
-              </a>
             </div>
           </div>
 
@@ -104,44 +95,6 @@ export default function HomePage() {
           )}
         </section>
 
-        {/* Tool spotlight */}
-        <section className="bg-signal-light border-y border-signal/20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-14 flex flex-col md:flex-row items-start md:items-center gap-6 sm:gap-8">
-            <div className="flex-1">
-              <span
-                className="text-xs font-medium tracking-widest text-signal uppercase mb-3 block"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Tool we recommend
-              </span>
-              <h2
-                className="text-2xl font-bold text-ink mb-2"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                MyFeedIn
-              </h2>
-              <p className="text-ink/70 text-base leading-relaxed" style={{ fontFamily: "var(--font-body)" }}>
-                Build custom LinkedIn feeds of the exact people you want to
-                follow. No algorithm. No noise. Just the creators and
-                connections that actually matter to you.
-              </p>
-            </div>
-            <div className="flex-shrink-0">
-              <a
-                href="https://myfeedin.co?atp=PO9qAX"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-signal text-white px-8 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors whitespace-nowrap"
-                style={{ fontFamily: "var(--font-body)" }}
-              >
-                Try free →
-              </a>
-              <p className="text-xs text-ink/40 mt-2 text-center" style={{ fontFamily: "var(--font-body)" }}>
-                Free plan available
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </>

@@ -49,15 +49,6 @@ export default function Header() {
           >
             Tools
           </Link>
-          <a
-            href="https://myfeedin.co?atp=PO9qAX"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm bg-signal text-white px-4 py-1.5 rounded-full hover:bg-signal-dark transition-colors"
-            style={{ fontFamily: "var(--font-body)" }}
-          >
-            Try MyFeedIn →
-          </a>
         </nav>
       </div>
 
@@ -80,16 +71,6 @@ export default function Header() {
             >
               Tools
             </Link>
-            <a
-              href="https://myfeedin.co?atp=PO9qAX"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm bg-signal text-white px-4 py-2 rounded-full hover:bg-signal-dark transition-colors text-center mt-1"
-              style={{ fontFamily: "var(--font-body)" }}
-              onClick={() => setMenuOpen(false)}
-            >
-              Try MyFeedIn →
-            </a>
           </nav>
         </div>
       )}
