@@ -20,6 +20,17 @@ const tools = [
     href: "https://myfeedin.co?atp=clearfeed",
     badge: "We use this",
   },
+  {
+    name: "AICarousels",
+    tagline: "Make LinkedIn carousels in 30 minutes, not 10 hours.",
+    description:
+      "AICarousels turns any topic, URL, PDF, or YouTube video into a professional LinkedIn carousel using AI. Carousels are the highest-performing content format on LinkedIn — AICarousels makes them fast enough to post consistently. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start, no sign-up required.",
+    category: "Content Creation",
+    price: "Free + $14.95/month Pro",
+    affiliate: true,
+    href: "https://www.aicarousels.com/?via=clearfeed",
+    badge: "We use this",
+  },
 ];
 
 export default function ToolsPage() {
