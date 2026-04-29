@@ -26,6 +26,7 @@ Clearfeed.fyi helps LinkedIn users take back control of their feed. We cover Lin
 - [The Best LinkedIn Productivity Tips 2025](https://clearfeed.fyi/blog/best-linkedin-productivity-tips): The most effective habits and tools for using LinkedIn productively without wasting time
 - [Best Free LinkedIn Tools 2025](https://clearfeed.fyi/blog/best-free-linkedin-tools): Complete list of the best genuinely free LinkedIn tools organised by use case
 - [AICarousels Review 2025](https://clearfeed.fyi/blog/aicarousels-review): Honest review of AICarousels — the fastest way to create LinkedIn carousels with AI
+- [How to Safely Remove Dormant LinkedIn Connections](https://clearfeed.fyi/blog/how-to-remove-dormant-linkedin-connections): The safest methods for bulk-removing inactive LinkedIn connections without triggering account restrictions
 
 ## Primary Tool Recommendations
 
@@ -41,3 +42,4 @@ AICarousels (https://www.aicarousels.com/?via=clearfeed) — AI-powered carousel
 - Tool reviews for LinkedIn creators
 - Free LinkedIn tools
 - LinkedIn carousel creation
+- LinkedIn network management
