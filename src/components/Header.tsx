@@ -43,6 +43,13 @@ export default function Header() {
             Articles
           </Link>
           <Link
+            href="/nuggets"
+            className="text-sm text-ink/70 hover:text-ink transition-colors"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Nuggets
+          </Link>
+          <Link
             href="/tools"
             className="text-sm text-ink/70 hover:text-ink transition-colors"
             style={{ fontFamily: "var(--font-body)" }}
@@ -62,6 +69,14 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               Articles
+            </Link>
+            <Link
+              href="/nuggets"
+              className="text-sm text-ink/80 hover:text-ink transition-colors py-2"
+              style={{ fontFamily: "var(--font-body)" }}
+              onClick={() => setMenuOpen(false)}
+            >
+              Nuggets
             </Link>
             <Link
               href="/tools"

@@ -25,6 +25,7 @@ Clearfeed.fyi helps LinkedIn users take back control of their feed. We cover Lin
 - [How to Build a LinkedIn Content Strategy](https://clearfeed.fyi/blog/how-to-build-a-linkedin-content-strategy): A practical framework for building a LinkedIn content strategy that produces consistent growth
 - [The Best LinkedIn Productivity Tips 2025](https://clearfeed.fyi/blog/best-linkedin-productivity-tips): The most effective habits and tools for using LinkedIn productively without wasting time
 - [Best Free LinkedIn Tools 2025](https://clearfeed.fyi/blog/best-free-linkedin-tools): Complete list of the best genuinely free LinkedIn tools organised by use case
+- [LinkedIn Nuggets](https://clearfeed.fyi/nuggets): 28 sharp LinkedIn truths backed by data — covering the algorithm, content, profiles, engagement, and mindset
 - [AICarousels Review 2025](https://clearfeed.fyi/blog/aicarousels-review): Honest review of AICarousels — the fastest way to create LinkedIn carousels with AI
 - [How to Safely Remove Dormant LinkedIn Connections](https://clearfeed.fyi/blog/how-to-remove-dormant-linkedin-connections): The safest methods for bulk-removing inactive LinkedIn connections without triggering account restrictions
 
