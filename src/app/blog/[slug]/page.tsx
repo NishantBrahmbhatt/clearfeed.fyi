@@ -149,7 +149,7 @@ export default async function PostPage({
               people you want to follow. Free to start.
             </p>
             <a
-              href="https://myfeedin.co?atp=PO9qAX"
+              href="https://myfeedin.co?atp=clearfeed"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-signal text-white px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors"

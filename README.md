@@ -49,7 +49,7 @@ Your content here...
 **CtaBox** — renders a green call-to-action box with a button:
 
 ```mdx
-<CtaBox href="https://myfeedin.co?atp=PO9qAX" cta="Try MyFeedIn free">
+<CtaBox href="https://myfeedin.co?atp=clearfeed" cta="Try MyFeedIn free">
   Your persuasive text here. Explain the benefit.
 </CtaBox>
 ```

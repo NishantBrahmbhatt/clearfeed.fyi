@@ -17,7 +17,7 @@ const tools = [
     category: "Feed Management",
     price: "Free + Paid plans",
     affiliate: true,
-    href: "https://myfeedin.co?atp=PO9qAX",
+    href: "https://myfeedin.co?atp=clearfeed",
     badge: "We use this",
   },
 ];
