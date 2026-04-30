@@ -15,9 +15,9 @@ const config: Config = {
       },
       colors: {
         ink: "#0D0D0D",
-        paper: "#F7F5F0",
-        mist: "#E8E4DC",
-        fog: "#C4BFB6",
+        paper: "#F3ECD9",
+        mist: "#E2D8BF",
+        fog: "#C9BEA3",
         signal: "#1A6B4A",
         "signal-light": "#E8F5EE",
         "signal-dark": "#0F3D2A",
