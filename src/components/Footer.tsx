@@ -12,9 +12,6 @@ export default function Footer() {
             >
               clearfeed<span className="text-signal">.fyi</span>
             </p>
-            <p className="text-sm text-ink/50" style={{ fontFamily: "var(--font-body)" }}>
-              Cut the noise. Own your LinkedIn feed.
-            </p>
           </div>
 
           <nav className="flex flex-wrap gap-6 text-sm text-ink/60" style={{ fontFamily: "var(--font-body)" }}>
@@ -26,9 +23,6 @@ export default function Footer() {
         <div className="mt-8 pt-6 border-t border-mist flex flex-col md:flex-row items-start md:items-center justify-between gap-2">
           <p className="text-xs text-ink/40" style={{ fontFamily: "var(--font-body)" }}>
             © {new Date().getFullYear()} Clearfeed.fyi. Some links on this site are affiliate links.
-          </p>
-          <p className="text-xs text-ink/40" style={{ fontFamily: "var(--font-body)" }}>
-            We only recommend tools we actually use.
           </p>
         </div>
       </div>
