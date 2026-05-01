@@ -374,6 +374,22 @@ export default function FreeToolsPage() {
           </a>
           .
         </p>
+
+        <div
+          className="mt-10 p-4 sm:p-5 rounded-lg border border-mist bg-paper text-sm text-ink/70 leading-relaxed max-w-2xl"
+          style={{ fontFamily: "var(--font-body)" }}
+        >
+          <strong className="text-ink">Affiliate disclosure.</strong> Links to{" "}
+          <strong>MyFeedIn</strong> and <strong>AICarousels</strong> on this page
+          use our partner tracking. If you register or later pay for a plan
+          through those services, we may earn a commission at{" "}
+          <strong>no extra cost to you</strong>. Whether a purchase counts
+          toward us depends on each company&apos;s programme rules (for
+          example, cookie length and eligibility). Links to{" "}
+          <strong>ContentIn</strong> and <strong>AuthoredUp</strong> here are{" "}
+          <strong>not</strong> affiliate links today; we include them because
+          the free tools are useful, not because we are paid for clicks.
+        </div>
       </main>
       <Footer />
     </>
