@@ -26,6 +26,18 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000)
 
+### Environment variables (optional)
+
+| Variable | Purpose |
+|----------|---------|
+| `NEXT_PUBLIC_BUTTONDOWN_USERNAME` | Your [Buttondown](https://buttondown.email) username. When set, the home and articles index pages show an email signup form that posts to Buttondown’s free embed API. |
+
+**Welcome email (you enable this in Buttondown, not in code):** after someone confirms their subscription, Buttondown can send one automatic welcome. In the Buttondown dashboard go to **Settings → Subscribing → Welcome email**, paste the subject and body from [`content/newsletter/welcome-email.md`](content/newsletter/welcome-email.md), and save. Docs: [Welcome email | Buttondown](https://docs.buttondown.com/transactional-emails-welcome).
+
+**RSS for new posts:** `https://clearfeed.fyi/feed.xml` — use it if your newsletter host supports “notify when RSS updates” (Buttondown and others often do). The site also advertises this feed in page metadata (`alternates`).
+
+Affiliate links from **CtaBox**, the **article footer CTA**, and the **tools page** automatically get UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_content`) so you can see which page/placement drove clicks in your affiliate dashboards.
+
 ---
 
 ## Writing a new post
@@ -46,13 +58,17 @@ Your content here...
 
 ### MDX components available in posts
 
-**CtaBox** — renders a green call-to-action box with a button:
+**CtaBox** — renders a green call-to-action box with a button (affiliate URLs get UTM tracking per post slug):
 
 ```mdx
 <CtaBox href="https://myfeedin.co?atp=clearfeed" cta="Try MyFeedIn free">
   Your persuasive text here. Explain the benefit.
 </CtaBox>
 ```
+
+Optional `footnote` string (shown under the button), e.g. annual vs monthly pricing notes for AICarousels.
+
+The **end-of-article banner** matches the article’s primary tool: `aicarousels-review` promotes AICarousels; all other posts promote MyFeedIn. Prefer **one main CtaBox** in the body so readers are not bombarded with identical boxes.
 
 ---
 
@@ -63,7 +79,7 @@ Every post should:
 1. **Target one specific question** someone would ask an AI — put it in the title
 2. **Answer it directly in the first paragraph** — don't make the reader scroll
 3. **Use H2 headers that are also questions or clear statements** — AI models parse these
-4. **Include your affiliate link 2-3 times** — once naturally in body, once in a CtaBox, once in the footer CTA
+4. **Include your affiliate link where it helps** — naturally in the body, one focused **CtaBox**, plus the automatic footer CTA for the article’s primary tool
 5. **End with a practical "what to do now" section** — AI models love actionable conclusions
 
 ---

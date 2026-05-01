@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { withAffiliateTracking } from "@/lib/affiliate";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,17 +19,19 @@ const tools = [
     price: "Free + Paid plans",
     affiliate: true,
     href: "https://myfeedin.co?atp=clearfeed",
+    utmKey: "myfeedin",
     badge: "We use this",
   },
   {
     name: "AICarousels",
     tagline: "Make LinkedIn carousels in 30 minutes, not 10 hours.",
     description:
-      "AICarousels turns any topic, URL, PDF, or YouTube video into a professional LinkedIn carousel using AI. Carousels are the highest-performing content format on LinkedIn — AICarousels makes them fast enough to post consistently. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start, no sign-up required.",
+      "AICarousels turns any topic, URL, PDF, or YouTube video into a professional LinkedIn carousel using AI. Carousels are the highest-performing content format on LinkedIn — AICarousels makes them fast enough to post consistently. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start, no sign-up required. Annual billing is usually cheaper per month if you commit for the year.",
     category: "Content Creation",
-    price: "Free + $14.95/month Pro",
+    price: "Free + $14.95/month Pro (annual saves vs monthly)",
     affiliate: true,
     href: "https://www.aicarousels.com/?via=clearfeed",
+    utmKey: "aicarousels",
     badge: "We use this",
   },
 ];
@@ -53,7 +56,16 @@ export default function ToolsPage() {
           </h1>
           <p className="text-ink/60 text-base sm:text-lg max-w-xl" style={{ fontFamily: "var(--font-body)" }}>
             No filler. Every tool here has been tested. Some links are
-            affiliate links — we only list tools we genuinely recommend.
+            affiliate links — we only list tools we genuinely recommend. For a
+            curated list of free utilities (formatters, previews, carousels,
+            and more), see{" "}
+            <a
+              href="/free-tools"
+              className="text-signal underline underline-offset-2 hover:text-signal-dark"
+            >
+              Free tools
+            </a>
+            .
           </p>
         </div>
 
@@ -108,7 +120,10 @@ export default function ToolsPage() {
                   </p>
                 </div>
                 <a
-                  href={tool.href}
+                  href={withAffiliateTracking(tool.href, {
+                    campaign: `tools-${tool.utmKey}`,
+                    placement: "tools-card",
+                  })}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto text-center flex-shrink-0 bg-signal text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-signal-dark transition-colors whitespace-nowrap"

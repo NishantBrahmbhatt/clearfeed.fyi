@@ -17,6 +17,7 @@ export default function Footer() {
           <nav className="flex flex-wrap gap-6 text-sm text-ink/60" style={{ fontFamily: "var(--font-body)" }}>
             <Link href="/blog" className="hover:text-ink transition-colors">Articles</Link>
             <Link href="/tools" className="hover:text-ink transition-colors">Tools</Link>
+            <Link href="/free-tools" className="hover:text-ink transition-colors">Free tools</Link>
           </nav>
         </div>
 

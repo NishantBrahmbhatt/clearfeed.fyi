@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -56,6 +56,13 @@ export default function Header() {
           >
             Tools
           </Link>
+          <Link
+            href="/free-tools"
+            className="text-sm text-ink/70 hover:text-ink transition-colors"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Free tools
+          </Link>
         </nav>
       </div>
 
@@ -85,6 +92,14 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               Tools
+            </Link>
+            <Link
+              href="/free-tools"
+              className="text-sm text-ink/80 hover:text-ink transition-colors py-2"
+              style={{ fontFamily: "var(--font-body)" }}
+              onClick={() => setMenuOpen(false)}
+            >
+              Free tools
             </Link>
           </nav>
         </div>

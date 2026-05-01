@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PostCard from "@/components/PostCard";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { getAllPosts } from "@/lib/posts";
 import type { Metadata } from "next";
 
@@ -33,6 +34,10 @@ export default function BlogPage() {
           <p className="text-ink/60 text-base sm:text-lg" style={{ fontFamily: "var(--font-body)" }}>
             Everything we know about making LinkedIn work for you.
           </p>
+        </div>
+
+        <div className="mb-12 max-w-xl">
+          <NewsletterSignup />
         </div>
 
         {posts.length === 0 ? (

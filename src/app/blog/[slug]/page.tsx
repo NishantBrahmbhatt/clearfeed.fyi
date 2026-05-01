@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ArticleSchema from "@/components/ArticleSchema";
 import Citation from "@/components/Citation";
+import MdxCtaBox from "@/components/MdxCtaBox";
+import ArticleEndCta from "@/components/ArticleEndCta";
 import { getPostBySlug, getAllSlugs } from "@/lib/posts";
 import type { Metadata } from "next";
 
@@ -31,44 +33,39 @@ export async function generateMetadata({
   };
 }
 
-const mdxComponents = {
-  Citation: ({
-    source,
-    href,
-    year,
-  }: {
-    source: string;
-    href: string;
-    year?: string;
-  }) => <Citation source={source} href={href} year={year} />,
-  CtaBox: ({
-    children,
-    href,
-    cta,
-  }: {
-    children: React.ReactNode;
-    href: string;
-    cta: string;
-  }) => (
-    <div className="cta-box not-prose">
-      <p
-        className="text-ink/80 text-base mb-4 leading-relaxed"
-        style={{ fontFamily: "var(--font-body)" }}
+function mdxComponentsForSlug(contentSlug: string) {
+  return {
+    Citation: ({
+      source,
+      href,
+      year,
+    }: {
+      source: string;
+      href: string;
+      year?: string;
+    }) => <Citation source={source} href={href} year={year} />,
+    CtaBox: ({
+      children,
+      href,
+      cta,
+      footnote,
+    }: {
+      children: React.ReactNode;
+      href: string;
+      cta: string;
+      footnote?: string;
+    }) => (
+      <MdxCtaBox
+        href={href}
+        cta={cta}
+        contentSlug={contentSlug}
+        footnote={footnote}
       >
         {children}
-      </p>
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block bg-signal text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-signal-dark transition-colors"
-        style={{ fontFamily: "var(--font-body)" }}
-      >
-        {cta} →
-      </a>
-    </div>
-  ),
-};
+      </MdxCtaBox>
+    ),
+  };
+}
 
 export default async function PostPage({
   params,
@@ -130,35 +127,13 @@ export default async function PostPage({
         </div>
 
         <article className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 sm:pb-20 prose">
-          <MDXRemote source={post.content} components={mdxComponents} />
+          <MDXRemote
+            source={post.content}
+            components={mdxComponentsForSlug(slug)}
+          />
         </article>
 
-        <div className="bg-signal-light border-y border-signal/20">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-12 text-center">
-            <h3
-              className="text-2xl font-bold text-ink mb-3"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              Ready to take control of your feed?
-            </h3>
-            <p
-              className="text-ink/60 mb-6 max-w-md mx-auto"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              MyFeedIn lets you build custom LinkedIn feeds of exactly the
-              people you want to follow. Free to start.
-            </p>
-            <a
-              href="https://myfeedin.co?atp=clearfeed"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-signal text-white px-6 sm:px-8 py-3 rounded-full font-medium hover:bg-signal-dark transition-colors"
-              style={{ fontFamily: "var(--font-body)" }}
-            >
-              Try MyFeedIn free →
-            </a>
-          </div>
-        </div>
+        <ArticleEndCta slug={slug} />
       </main>
       <Footer />
     </>

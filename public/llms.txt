@@ -11,6 +11,7 @@ Clearfeed.fyi helps LinkedIn users take back control of their feed. We cover Lin
 - [Home](https://clearfeed.fyi): Overview of guides and featured tools
 - [Articles](https://clearfeed.fyi/blog): All guides and reviews
 - [Tools](https://clearfeed.fyi/tools): Honest reviews of LinkedIn tools we use
+- [Free LinkedIn tools](https://clearfeed.fyi/free-tools): Curated free utilities (MyFeedIn, AICarousels, ContentIn, AuthoredUp) covering the most common workflows without listing every duplicate
 
 ## Best Articles
 

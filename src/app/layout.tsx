@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "Practical guides, tool reviews, and strategies for LinkedIn creators who want a focused, productive feed. No fluff.",
   metadataBase: new URL("https://clearfeed.fyi"),
+  alternates: {
+    types: {
+      "application/rss+xml": "https://clearfeed.fyi/feed.xml",
+    },
+  },
   openGraph: {
     siteName: "Clearfeed.fyi",
     type: "website",

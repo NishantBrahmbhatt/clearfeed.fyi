@@ -2,6 +2,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PostCard from "@/components/PostCard";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { getAllPosts } from "@/lib/posts";
 import type { Metadata } from "next";
 
@@ -51,6 +52,10 @@ export default function HomePage() {
               >
                 Read the guides →
               </Link>
+            </div>
+
+            <div className="mt-10 max-w-lg">
+              <NewsletterSignup />
             </div>
           </div>
 
