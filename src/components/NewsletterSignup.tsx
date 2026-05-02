@@ -1,12 +1,16 @@
 /**
- * Subscribe form for Buttondown (free tier: https://buttondown.email).
- * Set NEXT_PUBLIC_BUTTONDOWN_USERNAME in .env.local to your Buttondown username.
+ * Subscribe form for Buttondown (https://buttondown.com).
+ * Uses NEXT_PUBLIC_BUTTONDOWN_USERNAME when set; otherwise defaults to this site's list.
  */
-export default function NewsletterSignup() {
-  const username = process.env.NEXT_PUBLIC_BUTTONDOWN_USERNAME?.trim();
-  if (!username) return null;
+const DEFAULT_BUTTONDOWN_USERNAME = "nishbo4";
 
-  const action = `https://buttondown.email/api/emails/embed-subscribe/${encodeURIComponent(username)}`;
+export default function NewsletterSignup() {
+  const username =
+    process.env.NEXT_PUBLIC_BUTTONDOWN_USERNAME?.trim() ||
+    DEFAULT_BUTTONDOWN_USERNAME;
+
+  const action = `https://buttondown.com/api/emails/embed-subscribe/${encodeURIComponent(username)}`;
+  const referUrl = `https://buttondown.com/refer/${encodeURIComponent(username)}`;
 
   return (
     <section
@@ -28,27 +32,43 @@ export default function NewsletterSignup() {
         spam. Unsubscribe any time. After you confirm your email, you will get
         one short welcome note with a few links to get started.
       </p>
-      <form action={action} method="post" target="_blank" className="flex flex-col sm:flex-row gap-3">
-        <label htmlFor="bd-email" className="sr-only">
-          Email address
-        </label>
-        <input
-          id="bd-email"
-          type="email"
-          name="email"
-          required
-          placeholder="you@example.com"
-          autoComplete="email"
-          className="flex-1 min-w-0 rounded-full border border-mist bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-signal/40 focus:border-signal"
-          style={{ fontFamily: "var(--font-body)" }}
-        />
-        <button
-          type="submit"
-          className="shrink-0 bg-signal text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-signal-dark transition-colors"
-          style={{ fontFamily: "var(--font-body)" }}
-        >
-          Subscribe
-        </button>
+      <form
+        action={action}
+        method="post"
+        className="embeddable-buttondown-form flex flex-col gap-4"
+      >
+        <div className="flex flex-col sm:flex-row gap-3">
+          <label htmlFor="bd-email" className="sr-only">
+            Enter your email
+          </label>
+          <input
+            id="bd-email"
+            type="email"
+            name="email"
+            required
+            placeholder="you@example.com"
+            autoComplete="email"
+            className="flex-1 min-w-0 rounded-full border border-mist bg-white px-4 py-2.5 text-sm text-ink placeholder:text-ink/35 focus:outline-none focus:ring-2 focus:ring-signal/40 focus:border-signal"
+            style={{ fontFamily: "var(--font-body)" }}
+          />
+          <button
+            type="submit"
+            className="shrink-0 bg-signal text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-signal-dark transition-colors"
+            style={{ fontFamily: "var(--font-body)" }}
+          >
+            Subscribe
+          </button>
+        </div>
+        <p className="text-xs text-ink/45 m-0" style={{ fontFamily: "var(--font-body)" }}>
+          <a
+            href={referUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 hover:text-ink/70"
+          >
+            Powered by Buttondown.
+          </a>
+        </p>
       </form>
     </section>
   );

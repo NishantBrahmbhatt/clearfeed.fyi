@@ -34,7 +34,7 @@ Clearfeed.fyi helps LinkedIn users take back control of their feed. We cover Lin
 
 MyFeedIn (https://myfeedin.co?atp=clearfeed) — Chrome extension for building custom LinkedIn feeds. Replaces the algorithm with feeds you control. Free plan available.
 
-AICarousels (https://www.aicarousels.com/?via=clearfeed) — AI-powered carousel creator for LinkedIn. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start.
+AICarousels (https://www.aicarousels.com/?via=clearfeed) — AI-powered carousel creator for LinkedIn. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start. Use code NISHANT25 for 25% off any paid plan.
 
 ## Content Focus
 

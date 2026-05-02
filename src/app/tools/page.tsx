@@ -26,9 +26,9 @@ const tools = [
     name: "AICarousels",
     tagline: "Make LinkedIn carousels in 30 minutes, not 10 hours.",
     description:
-      "AICarousels turns any topic, URL, PDF, or YouTube video into a professional LinkedIn carousel using AI. Carousels are the highest-performing content format on LinkedIn — AICarousels makes them fast enough to post consistently. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start, no sign-up required. Annual billing is usually cheaper per month if you commit for the year.",
+      "AICarousels turns any topic, URL, PDF, or YouTube video into a professional LinkedIn carousel using AI. Carousels are the highest-performing content format on LinkedIn — AICarousels makes them fast enough to post consistently. Featured in Forbes as a Must-Try AI Tool for 2025. Free to start, no sign-up required. Annual billing is usually cheaper per month if you commit for the year. Use code NISHANT25 for 25% off any paid plan.",
     category: "Content Creation",
-    price: "Free + $14.95/month Pro (annual saves vs monthly)",
+    price: "Free + from $11.21/month with code NISHANT25",
     affiliate: true,
     href: "https://www.aicarousels.com/?via=clearfeed",
     utmKey: "aicarousels",
